@@ -1,0 +1,223 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  background: linear-gradient(90deg, #e3eefc 0%, #f3f8fe 100%);
+  color: #222;
+}
+
+.profile-card {
+  position: relative;
+  background: #fff;
+  box-shadow: 0 8px 32px rgba(56, 87, 120, 0.12);
+  max-width: 430px;
+  margin: 40px auto 30px auto;
+  border-radius: 20px;
+  text-align: center;
+  padding: 40px 30px 30px 30px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.profile-bg {
+  position: absolute;
+  top: -80px;
+  left: -80px;
+  right: -80px;
+  height: 220px;
+  background: linear-gradient(100deg, #3498db 0%, #6dd5fa 100%);
+  z-index: 0;
+  border-radius: 40% 40% 0 0;
+  opacity: 0.34;
+}
+
+.profile-img {
+  position: relative;
+  z-index: 2;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: 0 4px 16px rgba(52, 152, 219, 0.18);
+  transition: transform 0.3s;
+  margin-bottom: 15px;
+}
+
+.profile-img:hover {
+  transform: scale(1.07) rotate(-3deg);
+}
+
+.profile-card h1 {
+  position: relative;
+  z-index: 2;
+  font-size: 2.1em;
+  margin: 10px 0 4px 0;
+  letter-spacing: 1px;
+}
+
+.tagline {
+  font-size: 1.1em;
+  color: #3498db;
+  margin-bottom: 18px;
+  position: relative;
+  z-index: 2;
+  letter-spacing: 0.5px;
+}
+
+.profile-links {
+  position: relative;
+  z-index: 2;
+  margin-top: 14px;
+}
+
+.profile-links a {
+  display: inline-block;
+  margin-right: 18px;
+  color: #2d3e50;
+  background: #f7f7f7;
+  border-radius: 20px;
+  padding: 7px 18px;
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(52, 152, 219, 0.09);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.profile-links a:hover {
+  background: #3498db;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(52, 152, 219, 0.12);
+}
+
+/* Container & Sections */
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 34px 20px 20px 20px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 18px rgba(41, 128, 185, 0.09);
+}
+
+h2 {
+  color: #2d3e50;
+  margin-top: 42px;
+  font-size: 1.7em;
+  margin-bottom: 18px;
+}
+
+/* About */
+.about {
+  margin-bottom: 36px;
+  font-size: 1.08em;
+}
+
+/* Projects */
+.projects {
+  margin-bottom: 38px;
+}
+
+.project-card {
+  background: linear-gradient(95deg, #eaf6fc 0%, #f4f8fb 100%);
+  margin-bottom: 22px;
+  padding: 22px 18px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(52, 152, 219, 0.10);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 6px 20px rgba(52, 152, 219, 0.18);
+}
+
+.project-card h3 {
+  margin: 0 0 10px 0;
+  color: #3498db;
+  font-size: 1.18em;
+  letter-spacing: 0.5px;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 10px;
+  background: #3498db;
+  color: #fff;
+  padding: 7px 16px;
+  border-radius: 16px;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(52, 152, 219, 0.07);
+  transition: background 0.2s;
+  font-weight: 500;
+}
+
+.project-card a:hover {
+  background: #217dbb;
+}
+
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 12px;
+  margin-top: 18px;
+  max-width: 410px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  font-size: 1em;
+  padding: 10px 14px;
+  border-radius: 7px;
+  border: 1px solid #d0e3f1;
+  background: #f7f7f7;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #3498db;
+}
+
+.contact-form button {
+  background: #3498db;
+  color: #fff;
+  padding: 11px 0;
+  border: none;
+  border-radius: 7px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 1px 8px rgba(52, 152, 219, 0.08);
+}
+
+.contact-form button:hover {
+  background: #217dbb;
+}
+
+/* Responsive */
+@media (max-width: 860px) {
+  .container {
+    max-width: 98vw;
+    margin: 0 7px;
+    padding: 22px 7px 18px 7px;
+  }
+  .profile-card {
+    max-width: 98vw;
+    margin: 30px 7px 24px 7px;
+    padding: 30px 12px 24px 12px;
+  }
+}
+
+@media (max-width: 550px) {
+  .profile-img {
+    width: 90px; height: 90px;
+  }
+  h1 { font-size: 1.3em; }
+  h2 { font-size: 1.1em; }
+  .container, .profile-card { padding: 10px 3px; }
+}
+.contact-form button:hover { background: var(--link); }
